@@ -16,6 +16,9 @@ const board = document.createElement(`table`);
 const createPiece = (playerId) => {
   const piece = document.createElement(`div`);
   piece.className = playerId === 1 ? `piece player1` : `piece player2`;
+  piece.onclick = () => {
+    piece.className = togglePiece(piece);
+  };
   return piece;
 };
 
@@ -46,6 +49,20 @@ const appendRows = () => {
     board.appendChild(createRow(row, index));
   })
 };
+
+const togglePiece = (piece) => {
+  let {
+    className
+  } = piece;
+  console.log(className);
+  const selectedIndex = className.indexOf(` selected`);
+  console.log(selectedIndex);
+  className = selectedIndex > -1 ? 
+    className.substring(0, selectedIndex) :
+    className + ` selected`;
+    console.log(className);
+  return className;
+}
 
 appendRows();
 body.appendChild(board);
