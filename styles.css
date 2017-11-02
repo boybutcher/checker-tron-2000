@@ -1,0 +1,12 @@
+td {
+  width: 3rem;
+  height: 3rem;
+}
+
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+}
