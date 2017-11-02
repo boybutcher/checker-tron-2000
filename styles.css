@@ -5,8 +5,24 @@ td {
 
 .dark {
   background-color: black;
+  cursor: pointer;
 }
 
 .light {
   background-color: white;
+}
+
+.piece {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.player1 {
+  background-color: blue;
+}
+
+.player2 {
+  background-color: red;
 }
