@@ -54,13 +54,10 @@ const togglePiece = (piece) => {
   let {
     className
   } = piece;
-  console.log(className);
   const selectedIndex = className.indexOf(` selected`);
-  console.log(selectedIndex);
   className = selectedIndex > -1 ? 
     className.substring(0, selectedIndex) :
     className + ` selected`;
-    console.log(className);
   return className;
 }
 
