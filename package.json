@@ -1,0 +1,26 @@
+{
+  "name": "checker-tron-2000",
+  "version": "1.0.0",
+  "description": "light weight checker game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boybutcher/checker-tron-2000.git"
+  },
+  "author": "BQN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boybutcher/checker-tron-2000/issues"
+  },
+  "homepage": "https://github.com/boybutcher/checker-tron-2000#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
